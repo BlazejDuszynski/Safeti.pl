@@ -1,0 +1,120 @@
+.landingPage {
+  height: 100vh;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+.landingPage__textContainer {
+  width: 100%;
+  padding: 25vh 10%;
+  text-align: center;
+  color: whitesmoke;
+  gap: 10vh;
+  flex-direction: column;
+  display: flex;
+  background: linear-gradient(rgba(75, 75, 75, 0.7), rgba(75, 75, 75, 0.7)),
+    url(/images/background_camera.jpg);
+  background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat:no-repeat;
+background-position: center center;
+background-attachment:fixed;
+}
+
+.landingPage__welcome {
+  font-size: 1.2em;
+}
+
+.landingPage__text {
+  font-size: 1.7em;
+  font-weight: 700;
+  max-height: 80%;
+}
+
+.landingPage__textItem {
+  position: relative;
+}
+
+.landingPage__buttons {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-self: center;
+}
+
+.landingPage__button {
+  color: inherit;
+  border: 2px solid rgb(217, 218, 231);
+  width: 40%;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.landingPage__button--showOffer:hover {
+  background-color: rgb(217, 218, 231);
+  color: rgb(90, 91, 101);
+}
+
+.landingPage__button--contact {
+  border: 2px solid rgb(223, 100, 34);
+  background-color: rgb(223, 100, 34);
+}
+
+.landingPage__button--contact:hover {
+  border: 2px solid rgb(222, 111, 50);
+  background-color: rgb(222, 111, 50);
+}
+
+.landingPage__burgerMenu {
+  position: absolute;
+  flex-direction: column;
+  width: 35px;
+  height: 30px;
+  display: none;
+  right: 5%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.landingPage__burgerMenuBar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(226, 224, 219);
+  border-radius: 10px;
+}
+
+@media (max-width: 950px) {
+  .landingPage__showMoreButton {
+    padding: 10px 30px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 966px) {
+  .landingPage__buttons {
+    width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  .landingPage__textItem:after {
+    display: none;
+  }
+  .landingPage__textContainer {
+    gap: 10vh;
+    padding: 25vh 5% 10vh 5%;
+    font-size: 0.8em;
+  }
+  .landingPage__buttons {
+    font-size: 0.9em;
+  }
+}

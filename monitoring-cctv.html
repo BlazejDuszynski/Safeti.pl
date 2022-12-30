@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="/systemy kontroli/css/aside.css">
+    <link rel="stylesheet" href="/systemy kontroli/css/bottom.css">
+    <link rel="stylesheet" href="/systemy kontroli/css/contactWindow.css">
+    <link rel="stylesheet" href="/systemy kontroli/css/footer.css">
+    <link rel="stylesheet" href="/systemy kontroli/css/landingPage.css">
+    <link rel="stylesheet" href="/systemy kontroli/css/phoneCall.css">
+    <link rel="stylesheet" href="/systemy kontroli/css/safeti.css">
+    <link rel="stylesheet" href="/systemy kontroli/offerDetail.css">
+    <link rel="stylesheet" href="/systemy kontroli/monitoring.css">
+    <link rel="stylesheet" href="/css/nav_subpage.css">
+    <script defer src="/js/script.js"></script>
+    <title>Safeti - Instalacje teletechniczne, monitoring, alarmy, kontrola dostępu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Raleway:wght@200&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Raleway:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Quicksand:wght@300&family=Raleway:wght@200&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Quicksand:wght@900&family=Raleway:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital@1&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <section class="contactWindow">
+        <button class="contactWindow__closeButton">&times;</button>
+        <form class="contactWindow__form" action="https://formsubmit.co/blazej00@gazeta.pl" method="POST">
+            <header class="contactWindow__formHeader">Masz pytania?</header>
+            <p class="contactWindow__formAnswer">Napisz do nas, a na pewno wrócimy do Ciebie z odpowiedzią!</p>
+            <input class="contactWindow__formItem" name="name" placeholder="Imię" type="text" required>
+            <input class="contactWindow__formItem" name="phoneNumber" placeholder="Numer telefonu" type="text" required>
+            <input type="hidden" name="_subject" value="Nowy email ze strony Safeti.pl">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/potwierdzenie.html">
+            <input class="contactWindow__formItem" name="email" placeholder="Adres email" type="email" required>
+            <textarea type="input" class="contactWindow__formItem contact__formItem--textarea" name="message"
+                id="message" cols="30" rows="10" placeholder="Twoja wiadomość" required></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit" class="contactWindow__formItem contactWindow__formItem--submitButton">Wyślij</button>
+        </form>
+    </section>
+    <aside class="phoneCall">
+        <a class="phoneCall__link" href="tel:668051441">
+            <ion-icon class="phoneCall__icon" name="call-outline"></ion-icon>
+        </a>
+    </aside>
+    <main class="main">
+        <header class="header">
+            <a class="header__logo" href="/index.html"><img class="header__logo--image" src="/images/logo.png"
+                    alt="Logo firmy Safeti"></a>
+            <div class="header__burgerMenu" href="#">
+                <span class="header__burgerMenuBar"></span>
+                <span class="header__burgerMenuBar"></span>
+                <span class="header__burgerMenuBar"></span>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__navList">
+                    <li class="header__navItem"><a class="header__navLink" href="/index.html">Strona domowa</a></li>
+                    <li class="header__navItem"><a class="header__navLink" href="">O nas</a></li>
+                    <li class="header__navItem">
+                        <p class="header__navLink">Oferta</p>
+                        <ul class="header__detailedNavList">
+                            <li class="header__deatiledNavItem"><a class="header__detailedNavLink"
+                                    href="/montaz-alarmow.html">Montaż
+                                    alarmów</a></li>
+                            <li class="header__deatiledNavItem"><a class="header__detailedNavLink"
+                                    href="/monitoring-cctv.html">Monitoring CCTV</a></li>
+                            <li class="header__deatiledNavItem"><a class="header__detailedNavLink"
+                                    href="/sieci-komputerowe.html">Sieci
+                                    komputerowe</a></li>
+                            <li class="header__deatiledNavItem"><a class="header__detailedNavLink"
+                                    href="/spawanie-swiatlowodow.html">Spawanie
+                                    światłowodów</a></li>
+                            <li class="header__deatiledNavItem"><a class="header__detailedNavLink"
+                                    href="/systemy_kontroli_dostepu.html">Kontrola
+                                    dostępu</a></li>
+                            <li class="header__deatiledNavItem"><a class="header__detailedNavLink"
+                                    href="/instalacje-elektryczne.html">Instalacje elektryczne</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__navItem"><a class="header__navLink" href="/kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="offerDetail">
+            <div class="offerDetail__container">
+                <h2 class="offerDetail__name offerDetail__name--monitoring">Monitoring CCTV</h2>
+                <div class="offerDetail__description">
+                    <div class="offerDetail__description--item">
+                        <p class="offerDetail__description--text">Oferujemy montaż nowoczesnych systemów monitoringu
+                            wizyjnego. Odpowiednio zaprojektowany i zamontowany system zapewnia nadzór nad posesją 24
+                            godziny na dobę przez okrągły rok.<br><br>
+                            Zintegrowanie monitoringu z siecią internetową umożliwia podgląd z kamer w każdym
+                            miejscu na świecie z pozycji swojego smartfona lub komputera. Sam widok
+                            zamontowanej kamery skutecznie zniechęca potencjalnego intruza, a mnogość dostępnych funkcji
+                            pozwala na zastosowanie kamer praktycznie w każdych warunkach.
+                            <br>
+                            <br>
+                            Zapraszamy do kontaktu po więcej informacji.
+                        </p>
+                        <a class="offerDetail__description--button" href="/kontakt.html">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__item footer__item--fbAndLogo">
+                <p><img class="footer__image" src="images/logo.png" alt="logo"></p>
+                <a class="footer__link" href="https://www.facebook.com/safetipl" target="_blank">
+                    <ion-icon class="footer__fb" name="logo-facebook"></ion-icon>
+                </a>
+            </div>
+            <div class="footer__item">
+                <header class="footer__header">Adres firmy</header>
+                <p class="footer__text">Safeti</p>
+                <p class="footer__text">Ul. Szczęśliwa 13/1</p>
+                <p class="footer__text">88-300 Padniewko</p>
+            </div>
+            <div class="footer__item">
+                <header class="footer__header">Menu</header>
+                <p class="footer__text"><a class="footer__text--navLink" href="#">O
+                        firmie</a></p>
+                <p class="footer__text"><a class="footer__text--navLink" href="/oferta.html">Oferta</a></p>
+                <p class="footer__text"><a class="footer__text--navLink" href="#">Galeria</a> </p>
+                <p class="footer__text"><a class="footer__text--navLink" href="/kontakt/kontakt.html">Kontakt</a></p>
+            </div>
+            <div class="footer__item">
+                <header class="footer__header">Kontakt</header>
+                <p class="footer__text">tel: +48 668 051 441</p>
+                <p class="footer__text">email: kontakt@safeti.pl</p>
+            </div>
+        </footer>
+        <section class="bottom">
+            <div class="bottom__container">
+                <p>Prawa zastrzeżone © 2022 Safeti</p>
+                <p>Projekt i wykonanie: <a class="bottom__link"
+                        href="https://www.linkedin.com/in/b%C5%82a%C5%BCej-duszy%C5%84ski-54b511129/"
+                        target="_blank">Błażej
+                        Duszyński</a>
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

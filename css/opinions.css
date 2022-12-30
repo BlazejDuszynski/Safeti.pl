@@ -1,0 +1,62 @@
+.opinions {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(170, 156, 138, 1) 0%, rgba(218, 213, 205, 1) 100%);
+    width: 100%;
+    height: auto;
+    padding: 10vh 0 10vh 0;
+}
+
+.options__header {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.opinions__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 5%;
+    padding-top: 20vh;
+}
+
+.opinions__item {
+    width: 25vw;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.opinions__icon {
+    font-size: 3em;
+    padding-left: 5%;
+}
+
+.opinions__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
+    padding-left: 10%;
+    margin-top: -10%;
+    position: relative;
+    padding-bottom: 7%;
+}
+
+.opinions__footer {
+    margin-top: auto;
+    padding-left: 10%;
+    font-size: .7em;
+}
+
+.opinions__who {
+    font-weight: 700;
+}
+
+.opinions__where {
+    font-style: italic;
+}
