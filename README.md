@@ -14,3 +14,4 @@ This is a website of Safeti company. You can find here list of services provided
 
 - HTML5
 - CSS3
+- JavaScript
