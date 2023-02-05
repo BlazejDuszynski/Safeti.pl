@@ -1,6 +1,6 @@
 # Safeti.pl - website of company providing teletechnical instalations
 
-Landing page built with HTML and CSS. 
+Landing page built with HTML, CSS and JavaScript deployed on Hostinger.
 
 ## Table of contents
 * [General info](#general-info)
