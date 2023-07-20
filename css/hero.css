@@ -1,0 +1,5 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(85, 75, 201, 0.943) 0%, rgba(104, 130, 199, 0.923) 42%, rgba(221, 218, 252, 0.3) 100%), url(/images/light_background_camera_flipped.jpeg);
+    background-size: cover;
+}
