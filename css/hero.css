@@ -1,6 +1,6 @@
 .hero {
     height: 100vh;
-    background: linear-gradient(90deg, rgb(169, 161, 226) 0%, rgb(169, 161, 226) 50%, rgba(169, 161, 226, 0.2) 100%), url(/images/light_background_camera_flipped.jpeg);
+    background: linear-gradient(90deg, rgb(223, 221, 238) 0%, rgb(223, 221, 238) 50%, rgba(169, 161, 226, 0.2) 100%), url(/images/light_background_camera_flipped.jpeg);
     background-size: cover;
 }
 
