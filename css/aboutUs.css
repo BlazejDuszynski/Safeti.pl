@@ -13,9 +13,10 @@
     gap: 40px;
 }
 
-.aboutUs__textContainer h2 {
+.aboutUs__header {
     font-size: 1.5em;
     font-weight: 300;
+    opacity: 0;
 }
 
 .aboutUs__paragraph {
@@ -24,8 +25,6 @@
     opacity: 0;
 }
 
-.square {
-    background-color: black;
-    width: 100px;
-    height: 100px;
+.aboutUs__button {
+    opacity: 0;
 }

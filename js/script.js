@@ -90,6 +90,16 @@ let aboutUsParagraphs = gsap.utils.toArray(".aboutUs__paragraph");
 //   opacity: 1,
 //   duration: 1,
 // });
+gsap.to(".aboutUs__header", {
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".aboutUs__header",
+    start: "top 85%",
+    toggleActions: "restart none none reverse",
+    // markers: true,
+  },
+});
 
 gsap.utils.toArray(".aboutUs__paragraph").forEach((paragraph) => {
   gsap.to(paragraph, {
@@ -99,9 +109,20 @@ gsap.utils.toArray(".aboutUs__paragraph").forEach((paragraph) => {
       trigger: paragraph,
       start: "top 85%",
       toggleActions: "restart none none reverse",
-      markers: true,
+      // markers: true,
     },
   });
+});
+
+gsap.to(".aboutUs__button", {
+  opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".aboutUs__button",
+    start: "top 85%",
+    toggleActions: "restart none none reverse",
+    // markers: true,
+  },
 });
 
 // gsap.to(".square", {
