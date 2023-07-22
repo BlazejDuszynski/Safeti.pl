@@ -32,11 +32,6 @@ hamburger.addEventListener("click", () => {
 });
 
 // burger menu activation end
-// gsap.from(".header", {
-//   duration: 0.8,
-//   y: "-150%",
-//   delay: 1.5,
-// });
 
 gsap.from(".hero__heading", {
   duration: 1,
@@ -57,3 +52,30 @@ gsap.from(".hero__button", {
   y: 50,
   delay: 0.6,
 });
+
+// Wait for the DOM to be ready
+document.addEventListener("DOMContentLoaded", function () {
+  // Select the SVG groups
+  const house = document.getElementById("house");
+  const person = document.getElementById("person");
+  const camera = document.getElementById("camera");
+  const tools = document.getElementById("tools");
+
+  // Set initial states for opacity
+  gsap.set([person, tools, camera], { opacity: 0 });
+
+  // Create the GSAP timeline
+  const timeline = gsap.timeline();
+
+  // Add animations to the timeline
+  timeline
+    .to(person, { opacity: 1, x: 40, duration: 1, delay: 1 })
+    .to(tools, { opacity: 1, x: 40, duration: 1, delay: 0.05 })
+    .to(camera, { opacity: 1, x: 40, duration: 1 });
+});
+
+// timeline.fromTo(
+//   camera,
+//   { opacity: 0, x: 40 },
+//   { opacity: 1, x: 40, duration: 1, delay: 1.5 }
+// );
