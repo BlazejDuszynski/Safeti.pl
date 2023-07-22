@@ -23,6 +23,8 @@
 //fade in offer items end
 // burger menu activation start
 
+gsap.registerPlugin(ScrollTrigger);
+
 const hamburger = document.querySelector(".header__burgerMenu");
 const navMenu = document.querySelector(".header__navList");
 
@@ -76,14 +78,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //animating aboutUs section
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.from(".aboutUs__paragraph", {
-  opacity: 0,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".aboutUs__paragraph",
-    toggleActions: "restart pause resume none",
-    start: "top center",
-    markers: true,
-  },
+let aboutUsParagraphs = gsap.utils.toArray(".aboutUs__paragraph");
+
+// gsap.to(aboutUsParagraphs.forEach(paragraph) {
+//   scrollTrigger: {
+//     trigger: paragraph,
+//     start: "top 85%",
+//     markers: true,
+//     toggleActions: "restart pause resume none",
+//   },
+//   opacity: 1,
+//   duration: 1,
+// });
+
+gsap.utils.toArray(".aboutUs__paragraph").forEach((paragraph) => {
+  gsap.to(paragraph, {
+    opacity: 1,
+    duration: 1,
+    scrollTrigger: {
+      trigger: paragraph,
+      start: "top 85%",
+      toggleActions: "restart none none reverse",
+      markers: true,
+    },
+  });
 });
+
+// gsap.to(".square", {
+//   x: 400,
+//   duration: 2,
+// });
