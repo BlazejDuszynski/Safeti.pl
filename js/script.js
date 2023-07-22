@@ -69,13 +69,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Add animations to the timeline
   timeline
-    .to(person, { opacity: 1, x: 40, duration: 1, delay: 1 })
-    .to(tools, { opacity: 1, x: 40, duration: 1, delay: 0.05 })
-    .to(camera, { opacity: 1, x: 40, duration: 1 });
+    .to(person, { opacity: 1, x: 40, duration: 0.4, delay: 1 })
+    .to(tools, { opacity: 1, x: 40, duration: 0.4, delay: 0.05 })
+    .to(camera, { opacity: 1, x: 40, duration: 0.4 });
 });
 
-// timeline.fromTo(
-//   camera,
-//   { opacity: 0, x: 40 },
-//   { opacity: 1, x: 40, duration: 1, delay: 1.5 }
-// );
+//animating aboutUs section
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.from(".aboutUs__paragraph", {
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".aboutUs__paragraph",
+    toggleActions: "restart pause resume none",
+    start: "top center",
+    markers: true,
+  },
+});

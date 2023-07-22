@@ -1,0 +1,25 @@
+.aboutUs {
+    width: 100%;
+    padding: 100px 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.aboutUs__textContainer {
+    color: var(--main-font-color);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.aboutUs__textContainer h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.aboutUs__paragraph {
+    font-size: .8em;
+    color: var(--secondary-font-color);
+    opacity: 1;
+}

@@ -12,7 +12,7 @@
     left: 15%;
     right: 15%;
     max-width: 100%;
-    color: rgb(31, 31, 51);
+    color: var(--main-font-color);
 }
 
 .hero__textContainer {
@@ -28,7 +28,7 @@
 }
 
 .hero__paragraph {
-    color: rgb(70, 70, 117);
+    color: var(--secondary-font-color);
     font-size: .8em;
 }
 
