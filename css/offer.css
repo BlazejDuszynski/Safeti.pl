@@ -1,6 +1,7 @@
 .offer {
     min-height: 100vh;
     padding: 100px 15%;
+    background-color: rgb(233, 231, 244);
 }
 
 .offer header {
