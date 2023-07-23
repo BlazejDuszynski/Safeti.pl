@@ -3,7 +3,7 @@
     padding: 100px 15%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 100px;
 }
 
 .aboutUs__textContainer {
@@ -27,4 +27,33 @@
 
 .aboutUs__button {
     opacity: 0;
+}
+
+.aboutUs__imagesContainer {
+    position: relative;
+    padding: 70px 0;
+    width: 90%;
+}
+
+.aboutUs__image {
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.aboutUs__image--background {
+    z-index: 1;
+}
+
+.aboutUs__image--first {
+    top: 50px;
+    right: -10px;
+    width: 70%;
+    z-index: 2;
+}
+
+.aboutUs__image--second {
+    z-index: 3;
+    width: 70%;
+    bottom: 30px;
 }

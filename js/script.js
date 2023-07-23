@@ -96,7 +96,7 @@ gsap.to(".aboutUs__header", {
   scrollTrigger: {
     trigger: ".aboutUs__header",
     start: "top 85%",
-    toggleActions: "restart none none reverse",
+    toggleActions: "play none none reverse",
     // markers: true,
   },
 });
@@ -108,7 +108,7 @@ gsap.utils.toArray(".aboutUs__paragraph").forEach((paragraph) => {
     scrollTrigger: {
       trigger: paragraph,
       start: "top 85%",
-      toggleActions: "restart none none reverse",
+      toggleActions: "play none none reverse",
       // markers: true,
     },
   });
@@ -120,7 +120,7 @@ gsap.to(".aboutUs__button", {
   scrollTrigger: {
     trigger: ".aboutUs__button",
     start: "top 85%",
-    toggleActions: "restart none none reverse",
+    toggleActions: "play none none reverse",
     // markers: true,
   },
 });
