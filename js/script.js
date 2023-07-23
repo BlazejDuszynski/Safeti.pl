@@ -160,14 +160,12 @@ gsap.fromTo(
 
 // const offerSectionTimeline = gsap.timeline();
 
-gsap.to(".offer", {
-  // backgrounColor: "rgb(31, 31, 51)",
-  background: "linear-gradient(rgba(31, 31, 51, 0.80), rgba(31, 31, 51, 0.80)), url(/images/neuron-background.jpg)",
-  color: "white",
-  // duration: 1,
-  scrollTrigger: {
-    trigger: ".offer",
-    start: "top center",
-    toggleActions: "play none none reverse",
-  },
-});
+// gsap.to(".offer", {
+//   background: "rgb(9, 25, 66)",
+//   color: "white",
+//   scrollTrigger: {
+//     trigger: ".offer",
+//     start: "top center",
+//     toggleActions: "play none none reverse",
+//   },
+// });

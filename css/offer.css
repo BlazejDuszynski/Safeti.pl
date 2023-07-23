@@ -1,7 +1,9 @@
 .offer {
-    min-height: 100vh;
-    padding: 100px 15%;
-    background-color: rgb(233, 231, 244);
+    /* height: 100vh; */
+    padding: 100px 10%;
+    /* background: linear-gradient(rgba(31, 31, 51, 0.60), rgba(31, 31, 51, 0.60)), url(/images/home-security-camera.jpg); */
+    /* background-size: cover;
+    color: whitesmoke; */
 }
 
 .offer header {
@@ -17,25 +19,34 @@
     display: flex;
 }
 
-.offer__card {
+/* .offer__card {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
-    height: 400px;
-    width: 270px;
+    height: 80vh;
+    width: 300px;
     padding: 20px;
     background: rgba(133, 133, 133, 0.1);
     backdrop-filter: blur(6.8px);
     -webkit-backdrop-filter: blur(6.8px);
     border: 1px solid #ffffff22;
-    border-radius: 10px;
+    border-radius: 5px;
+} */
+
+/* .offer__cardImage {
+    width: 80%;
+    border-radius: 5px;
 }
 
-.offer__cardImage {
-    width: 100%;
-    border-radius: 10px;
+.offer__card h3 {
+    font-weight: 200;
 }
 
-.offer__cardButton {
-    
+.offer__card p {
+    font-size: 0.75em;
+} */
+
+.offer__card h3 {
+    font-size: 3em;
 }
