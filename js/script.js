@@ -78,25 +78,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //animating aboutUs section
 
-let aboutUsParagraphs = gsap.utils.toArray(".aboutUs__paragraph");
+// let aboutUsParagraphs = gsap.utils.toArray(".aboutUs__paragraph");
 
-// gsap.to(aboutUsParagraphs.forEach(paragraph) {
-//   scrollTrigger: {
-//     trigger: paragraph,
-//     start: "top 85%",
-//     markers: true,
-//     toggleActions: "restart pause resume none",
-//   },
-//   opacity: 1,
-//   duration: 1,
-// });
 gsap.to(".aboutUs__header", {
   opacity: 1,
   duration: 1,
+  repeat: 0,
   scrollTrigger: {
     trigger: ".aboutUs__header",
     start: "top 85%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play none none none",
     // markers: true,
   },
 });
@@ -105,10 +96,11 @@ gsap.utils.toArray(".aboutUs__paragraph").forEach((paragraph) => {
   gsap.to(paragraph, {
     opacity: 1,
     duration: 1,
+    repeat: 0,
     scrollTrigger: {
       trigger: paragraph,
       start: "top 85%",
-      toggleActions: "play none none reverse",
+      toggleActions: "play none none none",
       // markers: true,
     },
   });
@@ -120,12 +112,49 @@ gsap.to(".aboutUs__button", {
   scrollTrigger: {
     trigger: ".aboutUs__button",
     start: "top 85%",
-    toggleActions: "play none none reverse",
+    toggleActions: "play none none none",
     // markers: true,
   },
 });
 
-// gsap.to(".square", {
-//   x: 400,
-//   duration: 2,
-// });
+gsap.to(".aboutUs__image--first", {
+  y: 50,
+  opacity: 1,
+  scrollTrigger: {
+    trigger: ".aboutUs__imagesContainer",
+    start: "top center",
+    toggleActions: "play none none none",
+  },
+});
+
+gsap.fromTo(
+  ".aboutUs__image--second",
+  { opacity: 0, x: "-=100%", y: 50 },
+  {
+    opacity: 1,
+    x: -30,
+    y: 50,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".aboutUs__imagesContainer",
+      start: "top center",
+      toggleActions: "play none none none",
+    },
+  }
+);
+
+gsap.fromTo(
+  ".aboutUs__image--first",
+  { x: "-100%" },
+  {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".aboutUs__imagesContainer",
+      start: "top center",
+      toggleActions: "play none none none",
+      markers: true,
+    },
+  }
+);
