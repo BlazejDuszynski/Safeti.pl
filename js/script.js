@@ -154,7 +154,20 @@ gsap.fromTo(
       trigger: ".aboutUs__imagesContainer",
       start: "top center",
       toggleActions: "play none none none",
-      markers: true,
     },
   }
 );
+
+// const offerSectionTimeline = gsap.timeline();
+
+gsap.to(".offer", {
+  // backgrounColor: "rgb(31, 31, 51)",
+  background: "linear-gradient(rgba(31, 31, 51, 0.80), rgba(31, 31, 51, 0.80)), url(/images/neuron-background.jpg)",
+  color: "white",
+  // duration: 1,
+  scrollTrigger: {
+    trigger: ".offer",
+    start: "top center",
+    toggleActions: "play none none reverse",
+  },
+});

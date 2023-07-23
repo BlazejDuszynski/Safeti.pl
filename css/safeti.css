@@ -1,3 +1,9 @@
+:root {
+    --main-font-color: rgb(31, 31, 51);
+    --secondary-font-color: rgb(70, 70, 117);
+    --highlighted-font-color: #673FD7;
+}
+
 *, ::after, ::before {
     margin: 0;
     padding: 0;
@@ -8,12 +14,6 @@ body {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     background: rgb(223, 221, 238);
-}
-
-:root {
-    --main-font-color: rgb(31, 31, 51);
-    --secondary-font-color: rgb(70, 70, 117);
-    --highlighted-font-color: #673FD7;
 }
 
 .button {

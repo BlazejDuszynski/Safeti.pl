@@ -50,16 +50,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet" />
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EaselPlugin.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/PixiPlugin.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EaselPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/PixiPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 
@@ -495,7 +495,7 @@
       </div>
     </div>
   </div>
-  <section class="aboutUs">
+  <section class="aboutUs panel">
     <div class="aboutUs__imagesContainer">
       <!-- <img class="aboutUs__image aboutUs__image--background" src="/images/Colorful-pixels.png"> -->
       <img class="aboutUs__image aboutUs__image--first" src="/images/aboutUs_2.jpg">
@@ -505,7 +505,7 @@
       <h2 class="aboutUs__header">Poznaj naszą firmę</h2>
       <p class="aboutUs__paragraph">Jesteśmy wiodącą firmą z Mogilna specjalizującą się w kompleksowych usługach <span
           style="color: #673FD7">montażu kamer, alarmów, sieci
-          światłowodowych, komputerowych oraz systemów kontroli dostępu.</span><br> Działamy na terenie województw
+          światłowodowych, komputerowych oraz systemów kontroli dostępu.</span><br><br>Działamy na terenie województw
         kujawsko-pomorskiego i wielkopolskiego, oferując naszym klientom najwyższej jakości rozwiązania bezpieczeństwa i
         technologii.</p>
       <!-- <p class="aboutUs__paragraph">Dzięki wieloletniemu doświadczeniu i zaawansowanym technologiom,
@@ -517,12 +517,18 @@
       <button class="button aboutUs__button">Więcej</button>
     </div>
   </section>
-  <section>
+  <section class="offer panel">
     <header>
       <h2>Oferta</h2>
-      <p>Odkryj nasze wszechstronne usługi dopasowane do Twoich potrzeb!</p>
+      <p class="offer__headerParagraph">Odkryj nasze wszechstronne usługi dopasowane do Twoich potrzeb!</p>
     </header>
-    <div></div>
+    <div class="offer__cardsContainer">
+      <div class="offer__card">
+        <img class="offer__cardImage" src="/images/alarm.jpg">
+        <h3>Montaż alarmów</h3>
+        <button class="offer__cardButton"></button>
+      </div>
+    </div>
   </section>
   <!-- </div>
   <section id="offer" class="offer">
