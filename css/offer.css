@@ -68,31 +68,12 @@
     background: linear-gradient(90deg, rgba(139, 44, 154, 0.13235300956320024) 0%, rgba(11, 3, 89, 0.1435574913559174) 100%);
 }
 
-/* 
+
 
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 
-/* Variables */
-:root {
-    --main-green: #79dd09;
-    --main-green-rgb-015: rgba(121, 221, 9, 0.1);
-    --main-yellow: #bdbb49;
-    --main-yellow-rgb-015: rgba(189, 187, 73, 0.1);
-    --main-red: #bd150b;
-    --main-red-rgb-015: rgba(189, 21, 11, 0.1);
-    --main-blue: #0076bd;
-    --main-blue-rgb-015: rgba(0, 118, 189, 0.1);
-  }
   
   /* This pen */
-  body {
-    font-family: "Baloo 2", cursive;
-    font-size: 16px;
-    color: #ffffff;
-    text-rendering: optimizeLegibility;
-    font-weight: initial;
-  }
-  
   .dark {
     background: #110f16;
   }
@@ -324,6 +305,3 @@
     background-color: var(--main-green);
   }
   
-  
-
-*/
