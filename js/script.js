@@ -169,3 +169,42 @@ gsap.fromTo(
 //     toggleActions: "play none none reverse",
 //   },
 // });
+
+// gsap.utils.toArray(".panel").forEach((panel, i) => {
+//   ScrollTrigger.create({
+//     trigger: panel,
+//     start: "top top",
+//     // end: "bottom bottom",
+//     pin: true,
+//     pinSpacing: false,
+//     markers: true,
+//   });
+// });
+
+// ScrollTrigger.create({
+//   trigger: ".panel",
+//   start: "top top",
+//   end: "+=600px",
+//   pin: true,
+//   pinSpacing: false,
+//   markers: true,
+// });
+
+// gsap.to(".offer", {
+//   backgroundColor: "#1D293E",
+//   color: "whitesmoke",
+//   scrollTrigger: {
+//     trigger: ".offer",
+//     start: "top center",
+//     toggleActions: "play none none reverse",
+//     // markers: true,
+//   },
+// });
+
+// ScrollTrigger.create({
+//   trigger: ".aboutUs",
+//   start: "top top",
+//   end: "+=1000px",
+//   pin: true,
+//   markers: true,
+// });

@@ -1,9 +1,9 @@
 .offer {
-    /* height: 100vh; */
     padding: 100px 10%;
     /* background: linear-gradient(rgba(31, 31, 51, 0.60), rgba(31, 31, 51, 0.60)), url(/images/home-security-camera.jpg); */
-    /* background-size: cover;
-    color: whitesmoke; */
+    /* background-size: cover;*/
+    color: var(--main-font-color);
+    background-color: rgb(223, 221, 238);
 }
 
 .offer header {
@@ -15,38 +15,53 @@
 }
 
 .offer__cardsContainer {
-    margin: 70px 0;
-    display: flex;
+    margin: 70px;
+    display: grid;
+    grid-template-columns: repeat(6, 300px);
+    grid-gap: 30px;
+    overflow: hidden;
 }
 
-/* .offer__card {
+.offer__card {
+    height: 300px;
+    max-width: 300px;
+    padding: 40px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    height: 80vh;
-    width: 300px;
-    padding: 20px;
-    background: rgba(133, 133, 133, 0.1);
-    backdrop-filter: blur(6.8px);
-    -webkit-backdrop-filter: blur(6.8px);
-    border: 1px solid #ffffff22;
-    border-radius: 5px;
-} */
+    justify-content: space-between;
+    cursor: pointer;
+}
 
-/* .offer__cardImage {
-    width: 80%;
-    border-radius: 5px;
+.offer__cardIconContainer {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #8b67ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer__cardIconContainer img {
+    width: 100%;
 }
 
 .offer__card h3 {
-    font-weight: 200;
+    font-size: 1.1em;
+    color: rgb(219, 219, 235);
 }
 
 .offer__card p {
-    font-size: 0.75em;
-} */
+    font-size: .6em;
+    color: rgb(218, 218, 247);
+}
 
-.offer__card h3 {
-    font-size: 3em;
+.card {
+    width: 80%;
+    height: 200px;
+    background-color: white;
 }
