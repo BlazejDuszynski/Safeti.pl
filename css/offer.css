@@ -41,7 +41,7 @@
 }
 
 .offer__cardTextContainer {
-    padding: 20px 40px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,16 +63,48 @@
     background-color: inherit;
     color: #64B5E5;
     cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.offer__cardTextContainer button:hover {
+    color: #3f8ab6;
+    border: 1px solid #3f8ab6;
 }
 
 .offer__imageContainer {
-    background: linear-gradient(rgba(38, 54, 99, 0.80), rgba(38, 54, 99, 0.80)), url(/images/Monitoring-domu.jpg);
-    background-size: cover;
+    position: relative;
     border-radius: 10px;
-    transition: all .2s ease-in;
+    overflow: hidden;
 }
 
-.offer__card:hover .offer__imageContainer {
-    background: linear-gradient(rgba(38, 54, 99, 0.50), rgba(38, 54, 99, 0.50)), url(/images/Monitoring-domu.jpg);
-    background-size: cover;
+.offer__imageContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 54, 99, 0.60);
+    border-radius: 10px;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.offer__card:hover .offer__imageContainer::before {
+    background-color: rgba(38, 54, 99, 0.40);
+}
+
+.offer__imageContainer img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.offer__card:nth-child(even) {
+    grid-template-columns: 1.8fr 1.2fr;
+}
+
+.offer__card:nth-child(even) .offer__imageContainer {
+    order: -1;
 }
