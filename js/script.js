@@ -158,6 +158,45 @@ gsap.fromTo(
   }
 );
 
+gsap.utils.toArray(".offer__card").forEach((card) => {
+  gsap.fromTo(
+    card,
+    {
+      y: 100,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: card,
+        start: "top center",
+        markers: true,
+      },
+    }
+  );
+});
+
+// gsap.to(".aboutUs", {
+//   scrollTrigger: {
+//     trigger: ".aboutUs",
+//     start: "top top",
+//     end: "bottom",
+//     pin: true,
+//     scrub: true,
+//     pinSpacing: false,
+//     markers: true,
+//   },
+// });
+// ScrollTrigger.create({
+//   trigger: ".aboutUs",
+//   start: "top top",
+//   end: "bottom",
+//   pin: true,
+//   pinSpacing: false,
+//   markers: true,
+// });
+
 // const offerSectionTimeline = gsap.timeline();
 
 // gsap.to(".offer", {
