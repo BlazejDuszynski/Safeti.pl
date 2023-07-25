@@ -2,10 +2,10 @@
     padding: 100px 10%;
     color: var(--main-font-color);
     background-color: #192958;
+    color: whitesmoke;
 }
 
 .offer header {
-    color: whitesmoke;
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -18,6 +18,61 @@
 
 .offer header hr {
     width: 100px;
-    color: whitesmoke;
+    color: #64B5E5;
     border-radius: 10px;
+}
+
+.offer__cardsContainer {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.offer__card {
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr;
+    width: 90%;
+    max-height: 350px;
+    min-height: 50vh;
+    border-radius: 10px;
+    background-color: #263663;
+    cursor: pointer;
+}
+
+.offer__cardTextContainer {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.offer__cardTextContainer h3 {
+    color: #64B5E5;
+}
+
+.offer__cardTextContainer p {
+    font-size: 0.7em;
+}
+
+.offer__cardTextContainer button {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #64B5E5;
+    border-radius: 3px;
+    background-color: inherit;
+    color: #64B5E5;
+    cursor: pointer;
+}
+
+.offer__imageContainer {
+    background: linear-gradient(rgba(38, 54, 99, 0.80), rgba(38, 54, 99, 0.80)), url(/images/Monitoring-domu.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    transition: all .2s ease-in;
+}
+
+.offer__card:hover .offer__imageContainer {
+    background: linear-gradient(rgba(38, 54, 99, 0.50), rgba(38, 54, 99, 0.50)), url(/images/Monitoring-domu.jpg);
+    background-size: cover;
 }
