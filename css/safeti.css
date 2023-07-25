@@ -2,6 +2,14 @@
     --main-font-color: rgb(31, 31, 51);
     --secondary-font-color: rgb(70, 70, 117);
     --highlighted-font-color: #673FD7;
+    --main-green: #79dd09;
+    --main-green-rgb-015: rgba(121, 221, 9, 0.1);
+    --main-yellow: #bdbb49;
+    --main-yellow-rgb-015: rgba(189, 187, 73, 0.1);
+    --main-red: #bd150b;
+    --main-red-rgb-015: rgba(189, 21, 11, 0.1);
+    --main-blue: #0076bd;
+    --main-blue-rgb-015: rgba(0, 118, 189, 0.1);
 }
 
 *, ::after, ::before {
