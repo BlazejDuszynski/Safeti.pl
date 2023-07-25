@@ -11,7 +11,11 @@
     color: var(--main-font-color);
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
+}
+
+.aboutUs__textContainer hr {
+    width: 100px;
 }
 
 .aboutUs__header {

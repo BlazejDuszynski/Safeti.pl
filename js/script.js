@@ -171,7 +171,6 @@ gsap.utils.toArray(".offer__card").forEach((card) => {
       scrollTrigger: {
         trigger: card,
         start: "top 50%+=100px",
-        markers: true,
       },
     }
   );
