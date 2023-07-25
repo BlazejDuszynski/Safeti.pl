@@ -170,7 +170,7 @@ gsap.utils.toArray(".offer__card").forEach((card) => {
       opacity: 1,
       scrollTrigger: {
         trigger: card,
-        start: "top center",
+        start: "top 50%+=100px",
         markers: true,
       },
     }
