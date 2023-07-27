@@ -1,7 +1,7 @@
 .aboutUs {
     width: 100%;
     padding: 200px 15%;
-    background-color: rgb(233, 231, 244);
+    background-color: rgb(242, 242, 242);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;

@@ -10,9 +10,9 @@
     justify-content: space-between;
     text-transform: uppercase;
     /* font-style: italic; */
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.01);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(6.8px);
     -webkit-backdrop-filter: blur(6.8px);
     color: whitesmoke;
@@ -20,13 +20,12 @@
 
 a {
     text-decoration: none;
-    color: whitesmoke;
 }
 
 .header__logo {
     display: flex;
-    color: whitesmoke;
     text-decoration: none;
+    color: whitesmoke;
 }
 
 .header__logo--image {
@@ -49,7 +48,8 @@ a {
     display: block;
     text-decoration: none;
     cursor: pointer;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;    
+    color: whitesmoke;
 }
 
 .header__navItem:focus-within>ul,
