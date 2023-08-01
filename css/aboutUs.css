@@ -8,7 +8,6 @@
 }
 
 .aboutUs__textContainer {
-    color: var(--main-font-color);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -16,22 +15,26 @@
 
 .aboutUs__textContainer hr {
     width: 100px;
+    color: rgb(62, 62, 241);
 }
 
 .aboutUs__header {
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 300;
     opacity: 0;
+    color: rgb(62, 62, 241);
 }
 
 .aboutUs__paragraph {
     font-size: .8em;
-    color: var(--secondary-font-color);
     opacity: 0;
 }
 
 .aboutUs__button {
     opacity: 0;
+    border: 1px solid rgb(25, 25, 175);
+    background-color: inherit;
+    color: rgb(25, 25, 175);
 }
 
 .aboutUs__imagesContainer {
