@@ -24,3 +24,54 @@
     font-size: 1.7em;
     font-weight: 300;
 }
+
+.opinionsCardsContainer {
+    max-width: 100%;
+    padding: 150px 5%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.optionsCard {
+    background-color: whitesmoke;
+    height: 70vh;
+    width: 30vw;
+    padding: 40px 40px 70px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+}
+
+.optionsQuotesIcon {
+    max-width: 20px;
+}
+
+.optionsQuotesIcon img {
+    max-width: 100%;
+}
+
+.optionsCard p {
+    color: var(--secondary-font-color);
+}
+
+.optionsCardContent {
+    font-size: 0.8em;
+}
+
+.opinionsPictureContainer {
+    position: absolute;
+    bottom: -45px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.opinionsPictureContainer img {
+    width: 100%;
+}
