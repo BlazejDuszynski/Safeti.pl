@@ -176,73 +176,8 @@ gsap.utils.toArray(".offer__card").forEach((card) => {
   );
 });
 
-// gsap.to(".aboutUs", {
-//   scrollTrigger: {
-//     trigger: ".aboutUs",
-//     start: "top top",
-//     end: "bottom",
-//     pin: true,
-//     scrub: true,
-//     pinSpacing: false,
-//     markers: true,
-//   },
-// });
-// ScrollTrigger.create({
-//   trigger: ".aboutUs",
-//   start: "top top",
-//   end: "bottom",
-//   pin: true,
-//   pinSpacing: false,
-//   markers: true,
-// });
-
-// const offerSectionTimeline = gsap.timeline();
-
-// gsap.to(".offer", {
-//   background: "rgb(9, 25, 66)",
-//   color: "white",
-//   scrollTrigger: {
-//     trigger: ".offer",
-//     start: "top center",
-//     toggleActions: "play none none reverse",
-//   },
-// });
-
-// gsap.utils.toArray(".panel").forEach((panel, i) => {
-//   ScrollTrigger.create({
-//     trigger: panel,
-//     start: "top top",
-//     // end: "bottom bottom",
-//     pin: true,
-//     pinSpacing: false,
-//     markers: true,
-//   });
-// });
-
-// ScrollTrigger.create({
-//   trigger: ".panel",
-//   start: "top top",
-//   end: "+=600px",
-//   pin: true,
-//   pinSpacing: false,
-//   markers: true,
-// });
-
-// gsap.to(".offer", {
-//   backgroundColor: "#1D293E",
-//   color: "whitesmoke",
-//   scrollTrigger: {
-//     trigger: ".offer",
-//     start: "top center",
-//     toggleActions: "play none none reverse",
-//     // markers: true,
-//   },
-// });
-
-// ScrollTrigger.create({
-//   trigger: ".aboutUs",
-//   start: "top top",
-//   end: "+=1000px",
-//   pin: true,
-//   markers: true,
-// });
+ScrollTrigger.batch(".opinions__Card", {
+  start: "top 50%+=10px",
+  markers: true,
+  onEnter: (batch) => gsap.to(batch, { autoAlpha: 1, y: -50, stagger: 0.2 }),
+});
