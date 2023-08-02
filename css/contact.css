@@ -1,5 +1,56 @@
 .contact {
     background-color: inherit;
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
+    padding: 100px 15%;
+}
+
+.contact__headerContainer {
+    color: rgb(25, 25, 175);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact__headerContainer h3 {
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+.contact__headerContainer hr {
+    color: rgb(25, 25, 175);
+    width: 50px;
+}
+
+.contact__formContainer {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, textarea {
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(25, 25, 175);
+}
+
+form button {
+    background-color: rgb(31, 61, 199);
+    color: whitesmoke;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
