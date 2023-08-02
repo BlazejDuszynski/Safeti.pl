@@ -15,14 +15,14 @@
 
 .aboutUs__textContainer hr {
     width: 100px;
-    color: rgb(62, 62, 241);
+    color: rgb(25, 25, 175);
 }
 
 .aboutUs__header {
     font-size: 1.7em;
     font-weight: 300;
     opacity: 0;
-    color: rgb(62, 62, 241);
+    color: rgb(25, 25, 175);
 }
 
 .aboutUs__paragraph {
