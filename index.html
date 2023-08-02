@@ -48,6 +48,7 @@
     @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -730,13 +731,30 @@
     </div>
     <div class="contact__formContainer">
       <form>
-        <input style="font-family:'Poppins', sans-serif;" placeholder="Imię">
         <input style="font-family:'Poppins', sans-serif;" placeholder="Adres e-mail">
-        <textarea style="font-family:'Poppins', sans-serif; font-size: 0.75em;" placeholder="Wiadomość" rows="8" ></textarea>
+        <input style="font-family:'Poppins', sans-serif;" placeholder="Numer telefonu">
+        <textarea style="font-family:'Poppins', sans-serif; font-size: 0.75em;" placeholder="Wiadomość"
+          rows="8"></textarea>
         <button>Wyślij</button>
       </form>
-      <div class="contact__info"></div>
-    </div>
+      <div class="contact__info">
+        <div class="contact__infoItem">
+          <i class="fa fa-map-marker"></i>
+          <p>Padniewko, Mogilno</p>
+        </div>
+        <div class="contact__infoItem">
+          <div class="contact__infoItem">
+            <i class="fa fa-phone"></i>
+            <p>+48 724 216 378</p>
+          </div>
+        </div>
+        <div class="contact__infoItem">
+          <div class="contact__infoItem">
+            <i class="fa fa-envelope-o"></i>
+            <p>safeti@safeti.pl</p>
+          </div>
+        </div>
+      </div>
   </section>
   <!-- <footer class="footer panel">
     <div class="footer__item footer__item--fbAndLogo">

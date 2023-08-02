@@ -92,14 +92,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(38, 54, 99, 0.60);
+    background-color: rgba(38, 54, 99, 0.20);
     border-radius: 10px;
     z-index: 10;
     transition: all 0.15s ease-in-out;
 }
 
 .offer__card:hover .offer__imageContainer::before {
-    background-color: rgba(38, 54, 99, 0.30);
+    background-color: rgba(38, 54, 99, 0.10);
 }
 
 .offer__imageContainer img {

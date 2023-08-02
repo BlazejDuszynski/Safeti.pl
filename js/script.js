@@ -178,6 +178,6 @@ gsap.utils.toArray(".offer__card").forEach((card) => {
 
 ScrollTrigger.batch(".opinions__Card", {
   start: "top 50%+=10px",
-  markers: true,
+  markers: false,
   onEnter: (batch) => gsap.to(batch, { autoAlpha: 1, y: -50, stagger: 0.2 }),
 });

@@ -27,7 +27,7 @@
     margin: 100px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 100px;
 }
 
 form {
@@ -43,6 +43,10 @@ form input, textarea {
     border: 1px solid rgb(25, 25, 175);
 }
 
+form textarea {
+    resize: none;
+}
+
 form button {
     background-color: rgb(31, 61, 199);
     color: whitesmoke;
@@ -53,4 +57,32 @@ form button {
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+}
+
+.contact__info {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact__infoItem {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact__infoItem i {
+    color: var(--secondary-font-color);
+    display: flex;
+    justify-content: center;
+}
+
+.contact__infoItem p {
+    color: var(--secondary-font-color);
+}
+
+.contact__infoItem hr {
+    width: 100%;
 }
