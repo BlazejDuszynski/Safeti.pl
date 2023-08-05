@@ -6,6 +6,42 @@
     background-attachment: fixed;
 }
 
+.hero__companyInfoContainer {
+    width: 100%;
+    padding: 0 10%;
+    background-color: rgba(31, 34, 56, 0.288);
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__companyInfoContainer ul {
+    display: flex;
+    gap: 20px;
+}
+
+.hero__companyInfoContainer li {
+    padding: 3px 10px;
+    list-style: none;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+nav {
+    padding: 0 15%;
+    background-color: rgba(31, 34, 56, 0.367);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
 .hero__container {
     display: flex;
     justify-content: space-between;
