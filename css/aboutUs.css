@@ -1,66 +1,54 @@
 .aboutUs {
-    width: 100%;
-    padding: 200px 15%;
-    background-color: rgb(242, 242, 242);
+    min-height: 100vh;
+}
+
+.aboutUs__container {
+    padding: 20vh 15%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
+    grid-template-columns: 0.4fr 0.6fr;
+    gap: 60px;
 }
 
-.aboutUs__textContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.aboutUs__imageContainer {
+    margin: 50px 0;
+    border-radius: 5px;
 }
 
-.aboutUs__textContainer hr {
-    width: 100px;
-    color: rgb(25, 25, 175);
-}
-
-.aboutUs__header {
-    font-size: 1.7em;
-    font-weight: 300;
-    opacity: 0;
-    color: rgb(25, 25, 175);
-}
-
-.aboutUs__paragraph {
-    font-size: .8em;
-    opacity: 0;
-}
-
-.aboutUs__button {
-    opacity: 0;
-    border: 1px solid rgb(25, 25, 175);
-    background-color: inherit;
-    color: rgb(25, 25, 175);
-}
-
-.aboutUs__imagesContainer {
-    position: relative;
-    padding: 70px 0;
-    width: 90%;
-}
-
-.aboutUs__image {
-    position: absolute;
+img {
     width: 100%;
     border-radius: 5px;
 }
 
-.aboutUs__image--first {
-    top: 50px;
-    opacity: 0;
-    right: -10px;
-    width: 70%;
-    z-index: 2;
+.aboutUs__textContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.aboutUs__image--second {
-    opacity: 0;
-    left: -30px;
-    width: 70%;
-    z-index: 3;
-    bottom: 30px;
+.aboutUs__textContainer p:nth-child(1) {
+    font-size: 1.15em;
+    font-weight: 600;
+}
+
+.aboutUs__textContainer p:nth-child(2) {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.aboutUs__textContainer p:nth-child(3) {
+    font-size: 0.8em;
+    color: rgb(99, 99, 99);
+}
+
+.aboutUs__servicesList {
+    list-style: none;
+}
+
+.aboutUs__servicesList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+    color: rgb(99, 99, 99);
 }

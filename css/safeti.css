@@ -1,5 +1,5 @@
 :root {
-    --main-font-color: rgb(31, 31, 51);
+    --main-font-color: rgba(31, 34, 56);
     --secondary-font-color: rgb(70, 70, 117);
     --highlighted-font-color: #673FD7;
 }
@@ -14,5 +14,5 @@
 body {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
-    background: rgb(223, 221, 238);
+    background: rgb(244, 243, 255);
 }
