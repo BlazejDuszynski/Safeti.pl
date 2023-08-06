@@ -9,7 +9,7 @@
 .hero__companyInfoContainer {
     width: 100%;
     padding: 0 10%;
-    background-color: rgba(31, 34, 56, 0.288);
+    background-color: rgba(31, 34, 56, 0.671);
     display: flex;
     justify-content: space-between;
 }
@@ -30,9 +30,10 @@
     cursor: pointer;
 }
 
-nav {
+.navbar {
+    font-size: 0.9em;
     padding: 0 15%;
-    background-color: rgba(31, 34, 56, 0.367);
+    background-color: rgba(31, 34, 56, 0.907);
     display: flex;
     justify-content: space-between;
 }
@@ -41,19 +42,44 @@ nav {
     padding: 10px;
 }
 
-nav ul {
+.navbar ul {
     display: flex;
     gap: 40px;
+    list-style: none;
 }
 
-nav ul li {
-    list-style: none;
+.navbar ul li {
     padding: 10px;
     cursor: pointer;
+    position: relative;
 }
 
-nav ul li:hover {
-    color: #64B5E5;
+.navbar ul li:hover {
+    background-color: rgba(31, 34, 56, 0.945);
+}
+
+.navbar ul li:hover > ul {
+    display: initial;
+}
+
+.navbar ul li ul {
+    background-color: rgba(31, 34, 56, 0.907);
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+}
+
+.navbar ul li ul li {
+    width: 100%;
+}
+
+.navbar ul li ul li:hover {
+    width: 100%;
+    background-color: rgba(31, 34, 56, 0.945);
 }
 
 .hero__container {
