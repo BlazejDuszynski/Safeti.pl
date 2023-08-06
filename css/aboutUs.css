@@ -34,6 +34,7 @@ img {
 .aboutUs__textContainer p:nth-child(2) {
     font-style: italic;
     font-size: 0.9em;
+    font-weight: 500;
 }
 
 .aboutUs__textContainer p:nth-child(3) {
@@ -43,6 +44,7 @@ img {
 
 .aboutUs__servicesList {
     list-style: none;
+    line-height: 1.5em;
 }
 
 .aboutUs__servicesList li {
