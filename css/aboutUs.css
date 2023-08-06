@@ -33,12 +33,12 @@ img {
 
 .aboutUs__textContainer p:nth-child(2) {
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-weight: 500;
 }
 
 .aboutUs__textContainer p:nth-child(3) {
-    font-size: 0.8em;
+    font-size: 0.75em;
     color: rgb(99, 99, 99);
 }
 
@@ -51,6 +51,6 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: rgb(99, 99, 99);
 }
