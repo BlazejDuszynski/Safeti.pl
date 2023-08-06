@@ -20,9 +20,13 @@
 }
 
 .hero__companyInfoContainer li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
     padding: 3px 10px;
     list-style: none;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    font-style: italic;
     cursor: pointer;
 }
 
@@ -33,6 +37,10 @@ nav {
     justify-content: space-between;
 }
 
+.hero__logo {
+    padding: 10px;
+}
+
 nav ul {
     display: flex;
     gap: 40px;
@@ -40,6 +48,12 @@ nav ul {
 
 nav ul li {
     list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #64B5E5;
 }
 
 .hero__container {
