@@ -138,6 +138,8 @@
 //   onEnter: (batch) => gsap.to(batch, { autoAlpha: 1, y: -50, stagger: 0.2 }),
 // });
 
+gsap.registerPlugin(ScrollTrigger);
+
 gsap.fromTo(
   ".hero__header",
   {
@@ -148,10 +150,9 @@ gsap.fromTo(
     y: 0,
     opacity: 1,
     duration: 1,
-    delay: .2
+    delay: 0.2,
   }
 );
-
 
 gsap.from(".hero__heading", {
   duration: 1,
@@ -173,15 +174,15 @@ gsap.from(".hero__button", {
   delay: 0.6,
 });
 
-
 gsap.utils.toArray(".aboutUs__animatedSection").forEach((section) => {
   gsap.to(section, {
     opacity: 1,
+    y: 0,
     duration: 1,
     repeat: 0,
     scrollTrigger: {
       trigger: section,
-      start: "top 85%",
+      start: "top 75%",
       toggleActions: "play none none none",
       markers: true,
     },

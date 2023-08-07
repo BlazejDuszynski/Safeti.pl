@@ -53,3 +53,8 @@ img {
     font-size: 0.8em;
     color: rgb(99, 99, 99);
 }
+
+.aboutUs__animatedSection {
+    opacity: 0;
+    transform: translateY(30px);
+}
