@@ -120,7 +120,7 @@
 
 .offer {
     padding: 20vh 10%;
-    background-color: #2b609907;
+    background-color: #1e3f6307;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -150,10 +150,11 @@
 }
 
 .offer__card {
-    background-color: #F2F6FA;
+    background-color: #fdfdfd;
     -webkit-box-shadow: 6px 6px 24px -6px #F2F6FA;
     -moz-box-shadow: 6px 6px 24px -6px #F2F6FA;
     box-shadow: 6px 6px 24px -6px #F2F6FA;
+    border-radius: 5px;
     padding: 30px;
     margin-bottom: 50px;
     display: flex;

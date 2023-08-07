@@ -48,7 +48,7 @@
 //   },
 // });
 
-// gsap.utils.toArray(".aboutUs__paragraph").forEach((paragraph) => {
+// gsap.utils.toArray(".aboutUs__animatedSection").forEach((section) => {
 //   gsap.to(paragraph, {
 //     opacity: 1,
 //     duration: 1,
@@ -171,4 +171,19 @@ gsap.from(".hero__button", {
   opacity: 0,
   y: 50,
   delay: 0.6,
+});
+
+
+gsap.utils.toArray(".aboutUs__animatedSection").forEach((section) => {
+  gsap.to(section, {
+    opacity: 1,
+    duration: 1,
+    repeat: 0,
+    scrollTrigger: {
+      trigger: section,
+      start: "top 85%",
+      toggleActions: "play none none none",
+      markers: true,
+    },
+  });
 });

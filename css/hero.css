@@ -87,11 +87,8 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    position: absolute;
-    top: 25vh;
-    left: 15%;
-    right: 15%;
-    max-width: 100%;
+    padding: 10vh 10%;
+    max-width: 80%;
 }
 
 .hero__textContainer {
@@ -127,7 +124,7 @@
 
 .hero__button {
     padding: 20px;
-    width: 30%;
+    width: 40%;
     text-align: center;
     border: none;
     border-radius: 5px;
