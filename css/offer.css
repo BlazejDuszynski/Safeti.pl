@@ -161,6 +161,8 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    opacity: 0;
+    transform: translateY(30px);
 }
 
 .offer__card>h2 {

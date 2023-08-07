@@ -36,6 +36,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    opacity: 0;
+    transform: translateY(30px);
 }
 
 .segments__card>div {

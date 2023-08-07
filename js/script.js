@@ -184,7 +184,19 @@ gsap.utils.toArray(".aboutUs__animatedSection").forEach((section) => {
       trigger: section,
       start: "top 75%",
       toggleActions: "play none none none",
-      markers: true,
     },
   });
+});
+
+ScrollTrigger.batch(".offer__card", {
+  onEnter: (batch) => gsap.to(batch, { autoAlpha: 1, y: 0, stagger: 0.2 }),
+  markers: true,
+  start: "top 70%",
+});
+
+
+ScrollTrigger.batch(".segments__card", {
+  onEnter: (batch) => gsap.to(batch, { autoAlpha: 1, y: 0, stagger: 0.2 }),
+  markers: true,
+  start: "top 85%",
 });
