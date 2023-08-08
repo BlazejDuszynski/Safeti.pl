@@ -154,25 +154,47 @@ gsap.fromTo(
   }
 );
 
-gsap.from(".hero__heading", {
-  duration: 1,
-  opacity: 0,
-  y: 50,
-});
+gsap.fromTo(
+  ".hero__heading",
+  {
+    opacity: 0,
+    y: 50,
+  },
+  {
+    opacity: 1,
+    y: 0,
+    delay: 0.2,
+    duration: 1,
+  }
+);
 
-gsap.from(".hero__paragraph", {
-  duration: 1,
-  opacity: 0,
-  y: 50,
-  delay: 0.4,
-});
+gsap.fromTo(
+  ".hero__paragraph",
+  {
+    opacity: 0,
+    y: 50,
+  },
+  {
+    opacity: 1,
+    y: 0,
+    delay: 0.4,
+    duration: 1,
+  }
+);
 
-gsap.from(".hero__button", {
-  duration: 1,
-  opacity: 0,
-  y: 50,
-  delay: 0.6,
-});
+gsap.fromTo(
+  ".hero__button",
+  {
+    opacity: 0,
+    y: 50,
+  },
+  {
+    opacity: 1,
+    y: 0,
+    delay: 0.6,
+    duration: 1,
+  }
+);
 
 gsap.utils.toArray(".aboutUs__animatedSection").forEach((section) => {
   gsap.to(section, {
