@@ -190,13 +190,13 @@ gsap.utils.toArray(".aboutUs__animatedSection").forEach((section) => {
 
 ScrollTrigger.batch(".offer__card", {
   onEnter: (batch) => gsap.to(batch, { autoAlpha: 1, y: 0, stagger: 0.2 }),
-  markers: true,
+  // markers: true,
   start: "top 70%",
 });
 
 
 ScrollTrigger.batch(".segments__card", {
   onEnter: (batch) => gsap.to(batch, { autoAlpha: 1, y: 0, stagger: 0.2 }),
-  markers: true,
+  // markers: true,
   start: "top 85%",
 });

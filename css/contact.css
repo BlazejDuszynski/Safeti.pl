@@ -16,6 +16,7 @@
 .contact__headerContainer h3 {
     font-size: 1.7em;
     font-weight: 300;
+    color: var(--main-font-color);
 }
 
 .contact__headerContainer hr {
@@ -48,8 +49,8 @@ form textarea {
 }
 
 form button {
-    background-color: rgb(31, 61, 199);
-    color: whitesmoke;
+    background-color: rgb(109, 185, 230);
+    color: white;
     padding: 10px;
     letter-spacing: 1px;
     border-radius: 10px;

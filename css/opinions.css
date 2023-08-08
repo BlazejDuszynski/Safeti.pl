@@ -45,8 +45,6 @@
     text-align: center;
     gap: 20px;
     position: relative;
-    opacity: 0;
-    /* transform: translateY(-100px); */
 }
 
 .opinions__QuotesIcon {
