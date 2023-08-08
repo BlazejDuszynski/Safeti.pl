@@ -24,6 +24,7 @@ img {
 .aboutUs__textContainer p:nth-child(1) {
     font-size: 1.15em;
     font-weight: 600;
+    color: var(--main-font-color);
 }
 
 .aboutUs__textContainer p:nth-child(2) {
