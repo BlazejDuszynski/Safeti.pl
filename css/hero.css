@@ -127,6 +127,7 @@
 
 .hero__paragraph {
     font-size: .9em;
+    color: rgb(235, 235, 235);
 }
 
 .hero__button {
@@ -149,4 +150,38 @@
 .hero__image {
     transform: scaleX(-1);
     opacity: 1;
+}
+
+/* media queries */
+
+@media (min-width: 1400px) {
+    .hero__textContainer {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 1;
+        gap: 40px;
+        width: 70%;
+    }
+
+    .hero__heading {
+        font-size: 2.5em;
+    }
+
+
+    .hero__paragraph {
+        font-size: 1.1em;
+    }
+
+    .hero__button {
+        padding: 20px;
+        width: 40%;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(109, 185, 230);
+        color: rgba(31, 34, 56);
+        font-size: 0.95em;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+    }
 }

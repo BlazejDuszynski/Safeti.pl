@@ -1,7 +1,3 @@
-.aboutUs {
-    min-height: 100vh;
-}
-
 .aboutUs__container {
     padding: 20vh 15%;
     display: grid;
@@ -57,4 +53,35 @@ img {
 .aboutUs__animatedSection {
     opacity: 0;
     transform: translateY(30px);
+}
+
+@media (min-width: 1400px) {
+    .aboutUs__textContainer p:nth-child(1) {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    
+    .aboutUs__textContainer p:nth-child(2) {
+        font-style: italic;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    
+    .aboutUs__textContainer p:nth-child(3) {
+        font-size: 0.8em;
+        color: rgb(99, 99, 99);
+    }
+    
+    .aboutUs__servicesList {
+        list-style: none;
+        line-height: 2em;
+    }
+    
+    .aboutUs__servicesList li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.8em;
+        color: rgb(99, 99, 99);
+    }
 }
