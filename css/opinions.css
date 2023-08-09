@@ -43,11 +43,11 @@
 }
 
 .opinions__quotesIcon {
-    max-width: 20px;
+    width: 20px;
 }
 
 .opinions__quotesIcon img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .opinions__card p {
