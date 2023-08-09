@@ -2,11 +2,10 @@
     background-color: rgb(31, 34, 56);
     color: whitesmoke;
     padding: 30px 15%;
-    font-size: 0.7em;
+    font-size: 0.8em;
     display: flex;
     justify-content: space-between;
-    font-family: 'Acme', sans-serif;
-    letter-spacing: 1px;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 .footer>div {
@@ -16,9 +15,14 @@
 }
 
 .footer>div>header {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .footer>div>p, .footer>div>a {
     color: rgb(201, 201, 201);
+    font-size: 0.9em;
+}
+
+.footer>div>a {
+    cursor: pointer;
 }
