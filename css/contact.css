@@ -45,6 +45,7 @@ form button {
     min-height: 50vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .contact__info>h4 {
@@ -65,6 +66,11 @@ form button {
     gap: 20px;
     width: 70%;
     position: relative;
+}
+
+.contact__info>div>p {
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
 }
 
 .contact__info>div::after {
