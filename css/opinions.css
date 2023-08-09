@@ -5,24 +5,25 @@
     background-attachment: fixed;
     color: whitesmoke;
     min-height: 100vh;
-    padding: 100px 10% 50px;
+    padding: 0 10%;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .opinions__headerContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    padding-top: 100px;
 }
 
 .opinions h3 {
     font-size: 1.7em;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .opinions__cardsContainer {
     max-width: 100%;
-    padding: 150px 5%;
+    padding: 100px 5% 200px;
     display: flex;
     justify-content: center;
     gap: 30px;
