@@ -16,3 +16,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background: rgb(244, 243, 255);
 }
+
+button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
