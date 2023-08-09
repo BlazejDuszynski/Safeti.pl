@@ -5,25 +5,6 @@
     padding: 100px 15%;
 }
 
-.contact__headerContainer {
-    color: rgb(25, 25, 175);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-}
-
-.contact__headerContainer h3 {
-    font-size: 1.7em;
-    font-weight: 300;
-    color: var(--main-font-color);
-}
-
-.contact__headerContainer hr {
-    color: rgb(25, 25, 175);
-    width: 50px;
-}
-
 .contact__formContainer {
     margin: 100px 0;
     display: grid;
@@ -64,26 +45,36 @@ form button {
     min-height: 50vh;
     display: flex;
     flex-direction: column;
+}
+
+.contact__info>h4 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.contact__info>p {
+    font-size: 1.1em;
+}
+
+.contact__info>div {
+    font-size: 0.8em;
+    margin-top: 30px;
+    color: rgb(99, 99, 99);
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
+    width: 70%;
+    position: relative;
 }
 
-.contact__infoItem {
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.contact__infoItem i {
-    color: var(--secondary-font-color);
-    display: flex;
-    justify-content: center;
-}
-
-.contact__infoItem p {
-    color: var(--secondary-font-color);
-}
-
-.contact__infoItem hr {
-    width: 100%;
+.contact__info>div::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(109, 185, 230);
+    border-radius: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
 }

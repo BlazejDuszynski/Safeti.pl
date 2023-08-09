@@ -71,7 +71,7 @@
 }
 
 .navbar ul li ul {
-    background-color: rgba(31, 34, 56, 0.907);
+    background-color: rgb(31, 34, 56);
     position: absolute;
     left: 0;
     top: 45px;
