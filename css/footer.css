@@ -26,3 +26,9 @@
 .footer>div>a {
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 10%;
+    }
+}

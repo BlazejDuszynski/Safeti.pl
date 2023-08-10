@@ -8,7 +8,7 @@
 .contact__formContainer {
     margin: 100px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 100px;
 }
 
@@ -62,8 +62,8 @@ form button {
     margin-top: 30px;
     color: rgb(99, 99, 99);
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
     width: 70%;
     position: relative;
 }
@@ -73,14 +73,14 @@ form button {
     font-family: 'Rubik', sans-serif;
 }
 
-/* .contact__info>div::after {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: rgb(109, 185, 230);
-    border-radius: 50%;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(50%, 50%);
-} */
+@media (max-width: 768px) {
+    .contact__formContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact__info {
+        min-height: 0vh;
+    }
+}

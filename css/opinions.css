@@ -24,21 +24,21 @@
 .opinions__cardsContainer {
     max-width: 100%;
     padding: 100px 5% 200px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
 
 .opinions__card {
     background-color: whitesmoke;
-    max-height: 70vh;
-    width: 30vw;
+    min-height: 40vh;
     padding: 40px 40px 70px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
     gap: 20px;
     position: relative;
 }
@@ -70,4 +70,14 @@
 
 .opinions__pictureContainer img {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .opinions__cardsContainer {
+        gap: 80px;
+    }
+
+    .opinions__cardContent {
+        font-size: 0.9em;
+    }
 }
