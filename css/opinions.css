@@ -13,12 +13,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
     padding-top: 100px;
 }
 
 .opinions h3 {
     font-size: 1.7em;
     font-weight: 600;
+}
+
+.opinions__headerContainer>p {
+    font-size: 0.8em;
+    color: rgb(218, 218, 218);
+    text-align: center;
 }
 
 .opinions__cardsContainer {
