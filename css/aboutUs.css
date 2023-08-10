@@ -62,28 +62,59 @@ img {
         font-size: 1.5em;
         font-weight: 600;
     }
-    
+
     .aboutUs__textContainer p:nth-child(2) {
         font-style: italic;
         font-size: 1em;
         font-weight: 500;
     }
-    
+
     .aboutUs__textContainer p:nth-child(3) {
         font-size: 0.8em;
         color: rgb(99, 99, 99);
     }
-    
+
     .aboutUs__servicesList {
         list-style: none;
         line-height: 2em;
     }
-    
+
     .aboutUs__servicesList li {
         display: flex;
         align-items: center;
         gap: 10px;
         font-size: 0.8em;
         color: rgb(99, 99, 99);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .aboutUs__container {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .aboutUs__imageContainer {
+        display: none;
+    }
+
+    .aboutUs__textContainer {
+        gap: 40px;
+    }
+
+    .aboutUs__textContainer p:nth-child(1) {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .aboutUs__textContainer p:nth-child(2) {
+        font-style: italic;
+        font-size: 0.85em;
+        font-weight: 500;
+    }
+
+    .aboutUs__textContainer p:nth-child(3) {
+        font-size: 0.8em;
     }
 }

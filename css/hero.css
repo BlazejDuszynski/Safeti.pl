@@ -298,7 +298,7 @@
     }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .hero__socialMediaContainer {
         display: none;
     }
