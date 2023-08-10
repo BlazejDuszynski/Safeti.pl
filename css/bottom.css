@@ -19,15 +19,17 @@
     color: rgb(211, 209, 209);
 }
 
-@media (max-width:800px) {
+@media (max-width: 768px) {
     .bottom {
         font-size: 0.7em;
     }
 }
 
-@media (max-width:600px) {
-    .bottom {
-        font-size: 0.6em;
+@media (max-width: 576px) {
+    .bottom__container {
+        width: 95%;
     }
-
+    .bottom {
+        font-size: 0.5em;
+    }
 }
