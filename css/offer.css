@@ -27,7 +27,7 @@
     margin: 50px 0;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     align-content: center;
     gap: 30px;
 }
@@ -83,5 +83,9 @@
 @media (max-width: 768px) {
     .offer {
         padding: 20vh 5%;
+    }
+
+    .offer__container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }

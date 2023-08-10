@@ -1,10 +1,10 @@
 .footer {
     background-color: rgb(31, 34, 56);
     color: whitesmoke;
-    padding: 30px 15%;
+    padding: 30px 30%;
     font-size: 0.8em;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 10px;
     font-family: 'Source Sans 3', sans-serif;
 }
