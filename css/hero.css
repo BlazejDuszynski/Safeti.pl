@@ -51,27 +51,28 @@
     padding: 10px;
 }
 
-.navbar ul {
+.navbar__menu {
     display: flex;
     gap: 40px;
     list-style: none;
 }
 
-.navbar ul li {
+.navbar__menu li {
     padding: 10px;
     cursor: pointer;
     position: relative;
 }
 
-.navbar>ul>li:hover {
+/* .navbar>ul>li:hover {
     color: rgb(109, 185, 230);
-}
+} */
 
-.navbar ul li:hover>ul {
+.navbar__menu li:focus-within>ul,
+.navbar__menu li:hover>ul {
     display: initial;
 }
 
-.navbar ul li ul {
+.navbar__menu li ul {
     background-color: rgb(31, 34, 56);
     position: absolute;
     left: 0;
@@ -83,11 +84,11 @@
     z-index: 99999;
 }
 
-.navbar ul li ul li {
+.navbar__menu li ul li {
     width: 100%;
 }
 
-.navbar ul li ul li:hover {
+.navbar__menu li ul li:hover {
     width: 100%;
     color: rgb(109, 185, 230);
 }
@@ -240,10 +241,10 @@
         background-color: rgb(31, 34, 56);
         display: flex;
         justify-content: space-between;
-    }
-
-    .navbar ul {
-        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
     }
 
     .navbar__burger {
@@ -264,5 +265,33 @@
 
     .navbar__burgerBar {
         transition: all 0.2s ease-in-out;
+    }
+
+    .navbar__menu {
+        display: flex;
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        text-align: center;
+        background-color: rgb(31, 34, 56);
+    }
+
+    .navbar__menu li {
+        width: 100%;
+    }
+
+    .navbar__menu li ul {
+        position: relative;
+        width: 100%;
+        top: 10px;
+        list-style: none;
+    }
+
+    .navbar__menu.active {
+        left: 0;
     }
 }

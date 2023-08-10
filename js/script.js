@@ -141,11 +141,11 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const burger = document.querySelector(".navbar__burger");
-const navbar = document.querySelector(".navbar");
+const navbarMenu = document.querySelector(".navbar__menu");
 
 burger.addEventListener("click", () => {
   burger.classList.toggle("active");
-  navbar.classList.toggle("active");
+  navbarMenu.classList.toggle("active");
 });
 
 gsap.fromTo(
@@ -228,7 +228,7 @@ ScrollTrigger.batch(".segments__card", {
   start: "top 85%",
 });
 
-ScrollTrigger.batch(".opinions__Card", {
+ScrollTrigger.batch(".opinions__card", {
   onEnter: (batch) => gsap.to(batch, { autoAlpha: 1, y: 0, stagger: 0.2 }),
   start: "top 85%",
 });
