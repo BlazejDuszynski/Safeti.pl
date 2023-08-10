@@ -92,7 +92,7 @@
     color: rgb(109, 185, 230);
 }
 
-.navbar__burgerContainer {
+.navbar__burger {
     display: none;
     flex-direction: column;
     gap: 7px;
@@ -246,7 +246,23 @@
         display: none;
     }
 
-    .navbar__burgerContainer {
+    .navbar__burger {
         display: flex;
+    }
+
+    .navbar__burger.active .navbar__burgerBar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar__burger.active .navbar__burgerBar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .navbar__burger.active .navbar__burgerBar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .navbar__burgerBar {
+        transition: all 0.2s ease-in-out;
     }
 }

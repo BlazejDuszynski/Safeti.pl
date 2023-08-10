@@ -140,6 +140,14 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
+const burger = document.querySelector(".navbar__burger");
+const navbar = document.querySelector(".navbar");
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  navbar.classList.toggle("active");
+});
+
 gsap.fromTo(
   ".hero__header",
   {
