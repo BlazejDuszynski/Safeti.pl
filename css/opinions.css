@@ -73,6 +73,14 @@
 }
 
 @media (max-width: 768px) {
+    .opinions {
+        padding: 0 5%;
+    }
+
+    .opinions__headerContainer {
+        text-align: center;
+    }
+
     .opinions__cardsContainer {
         gap: 80px;
     }

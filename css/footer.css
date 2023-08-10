@@ -30,8 +30,7 @@
 
 @media (max-width: 768px) {
     .footer {
-        padding: 30px 5%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 3%;
+        justify-content: space-around;
     }
 }

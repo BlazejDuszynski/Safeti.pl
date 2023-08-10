@@ -64,7 +64,7 @@ form button {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 70%;
+    width: 100%;
     position: relative;
 }
 
@@ -74,6 +74,11 @@ form button {
 }
 
 @media (max-width: 768px) {
+    .contact {
+        padding: 100px 5%;
+        text-align: center;
+    }
+
     .contact__formContainer {
         display: flex;
         flex-direction: column;
