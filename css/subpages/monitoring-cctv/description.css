@@ -1,0 +1,17 @@
+.description {
+    padding: 5vh 10%;
+    background-color: #1e3f6307;
+}
+
+.description__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin: 20vh 0;
+    font-size: 0.9em;
+}
+
+.description__imageContainer>img {
+    width: 100%;
+    border-radius: 20px;
+}
