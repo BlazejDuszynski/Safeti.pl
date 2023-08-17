@@ -1,4 +1,7 @@
 .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 5vh 10%;
     background-color: #1e3f6307;
 }
@@ -7,11 +10,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
-    margin: 20vh 0;
+    margin: 15vh 0;
     font-size: 0.9em;
 }
 
 .description__imageContainer>img {
     width: 100%;
     border-radius: 20px;
+}
+
+.description__button {
+    background-color: rgb(109, 185, 230);
+    color: white;
+    padding: 10px;
+    width: 200px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
