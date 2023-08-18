@@ -26,6 +26,10 @@ const showPrevImage = () => {
   popupImg.src = thumbnails[currentImgIndex].src;
 };
 
+const closePopup = () => {
+  popup.classList.add("hidden");
+};
+
 thumbnails.forEach((thumbnail, index) => {
   thumbnail.addEventListener("click", (e) => {
     popup.classList.remove("hidden");
@@ -35,19 +39,28 @@ thumbnails.forEach((thumbnail, index) => {
   });
 });
 
-popupClose.addEventListener("click", () => {
-  popup.classList.add("hidden");
-});
+popupClose.addEventListener("click", closePopup);
 
 arrowRight.addEventListener("click", showNextImage);
 
 arrowLeft.addEventListener("click", showPrevImage);
 
 document.addEventListener("keydown", (e) => {
-  console.log(e);
-  if (e.code === "ArrowRight" && e.keyCode === 39) {
-    showNextImage();
-  } else if (e.code === "ArrowLeft" && e.keyCode === 37) {
-    showPrevImage();
+  if (!popup.classList.contains("hidden")) {
+    if (e.code === "ArrowRight" && e.keyCode === 39) {
+      showNextImage();
+    }
+    if (e.code === "ArrowLeft" && e.keyCode === 37) {
+      showPrevImage();
+    }
+    if (e.code === "Escape" && e.keyCode === 27) {
+      closePopup();
+    }
+  }
+});
+
+popup.addEventListener("click", (e) => {
+  if (e.target === popup) {
+    closePopup();
   }
 });
