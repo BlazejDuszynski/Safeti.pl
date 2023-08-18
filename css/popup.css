@@ -29,6 +29,33 @@
 }
 
 .popup img {
-    max-height: 80%;
-    max-width: 80%;
+    height: 80%;
+    width: 80%;
+}
+
+.popup__arrow {
+    position: absolute;
+    font-size: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 64px;
+    width: 64px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.1s ease-in-out;
+}
+
+.popup__arrow:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.popup__arrow--right {
+    right: 5%;
+}
+
+.popup__arrow--left {
+    left: 5%;
 }
