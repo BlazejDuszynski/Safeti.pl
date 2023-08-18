@@ -1,0 +1,32 @@
+.gallery {
+    min-height: 20vh;
+    padding: 5vh 10%;
+    background-color: #1e3f6307;
+}
+
+.gallery__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery__thumbnail {
+    list-style: none;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid var(--button-background);
+}
+
+.gallery__thumbnail img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.gallery__thumbnail img:hover {
+    transform: scale(1.1);
+}
