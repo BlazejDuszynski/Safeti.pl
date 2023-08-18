@@ -17,6 +17,17 @@
     display: none;
 }
 
+.popup__close {
+    right: 64px;
+    top: 32px;
+    position: fixed;
+    font-size: 64px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+}
+
 .popup img {
     max-height: 80%;
     max-width: 80%;
