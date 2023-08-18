@@ -17,7 +17,6 @@
     width: 300px;
     overflow: hidden;
     position: relative;
-    border: 2px solid var(--button-background);
 }
 
 .gallery__thumbnail img {
