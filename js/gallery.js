@@ -7,6 +7,25 @@ const arrowRight = document.querySelector(".popup__arrow--right");
 
 let currentImgIndex;
 
+const showNextImage = () => {
+  if (currentImgIndex === thumbnails.length - 1) {
+    currentImgIndex = 0;
+  } else {
+    currentImgIndex++;
+  }
+  popupImg.src = thumbnails[currentImgIndex].src;
+  console.log(currentImgIndex);
+};
+
+const showPrevImage = () => {
+  if (currentImgIndex === 0) {
+    currentImgIndex = thumbnails.length - 1;
+  } else {
+    currentImgIndex--;
+  }
+  popupImg.src = thumbnails[currentImgIndex].src;
+};
+
 thumbnails.forEach((thumbnail, index) => {
   thumbnail.addEventListener("click", (e) => {
     popup.classList.remove("hidden");
@@ -20,20 +39,15 @@ popupClose.addEventListener("click", () => {
   popup.classList.add("hidden");
 });
 
-arrowRight.addEventListener("click", () => {
-  if (currentImgIndex === thumbnails.length - 1) {
-    currentImgIndex = 0;
-  } else {
-    currentImgIndex = currentImgIndex++;
-  }
-  popupImg.src = thumbnails[currentImgIndex].src;
-});
+arrowRight.addEventListener("click", showNextImage);
 
-arrowLeft.addEventListener("click", () => {
-  if (currentImgIndex === 0) {
-    currentImgIndex = thumbnails.length - 1;
-  } else {
-    currentImgIndex = currentImgIndex--;
+arrowLeft.addEventListener("click", showPrevImage);
+
+document.addEventListener("keydown", (e) => {
+  console.log(e);
+  if (e.code === "ArrowRight" && e.keyCode === 39) {
+    showNextImage();
+  } else if (e.code === "ArrowLeft" && e.keyCode === 37) {
+    showPrevImage();
   }
-  popupImg.src = thumbnails[currentImgIndex].src;
 });
