@@ -11,6 +11,11 @@
     z-index: 999999;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
+    animation: fadeIn 0.2s;
+}
+
+.popup.fadeOut {
+    animation: fadeOut 0.2s both;
 }
 
 .popup.hidden {
@@ -58,4 +63,24 @@
 
 .popup__arrow--left {
     left: 5%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }

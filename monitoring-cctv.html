@@ -59,10 +59,10 @@
 
 <body>
     <div class="popup hidden">
-        <button class="popup__close">X</button>
-        <img src="" alt="" class="popup__img">
-        <button class="popup__arrow popup__arrow--right">+</button>
-        <button class="popup__arrow popup__arrow--left">-</button>
+        <button aria-label="Zamknij popup" class="popup__close">X</button>
+        <img class="popup__img">
+        <button aria-label="Następne zdjęcie" class="popup__arrow popup__arrow--right">+</button>
+        <button aria-label="Poprzednie zdjęcie" class="popup__arrow popup__arrow--left">-</button>
     </div>
     <div class="hero">
         <header class="hero__header">
@@ -145,20 +145,22 @@
     </section>
     <section class="gallery">
         <ul class="gallery__container">
-            <li class="gallery__thumbnail"><img
+            <li class="gallery__thumbnail"><img tabindex="0"
                     src="https://www.bls.gov/spotlight/2022/the-construction-industry-labor-force-2003-to-2020/images/cover-image.jpg">
             </li>
-            <li class="gallery__thumbnail"><img src="https://gratka.pl/blog/wp-content/uploads/2022/05/img_9970.jpg">
+            <li class="gallery__thumbnail"><img tabindex="0"
+                    src="https://gratka.pl/blog/wp-content/uploads/2022/05/img_9970.jpg">
             </li>
-            <li class="gallery__thumbnail"><img
+            <li class="gallery__thumbnail"><img tabindex="0"
                     src="https://beskidzka24.pl/wp-content/uploads/2019/04/domowy-monitoring-jak-zabezpieczyc-dom-przy-pomocy-kamery-ip-1170x780.jpeg">
             </li>
-            <li class="gallery__thumbnail"><img
+            <li class="gallery__thumbnail"><img tabindex="0"
                     src="https://dvspolska.pl/img/cms/grafiki/Blog/Czym%20si%C4%99%20kierowa%C4%87%20wybieraj%C4%85c%20monitoring%20domu/Dom.jpg">
             </li>
-            <li class="gallery__thumbnail"><img
+            <li class="gallery__thumbnail"><img tabindex="0"
                     src="https://a.allegroimg.com/original/128d8e/d27846b445d2b52ade86a6b3d28a"></li>
-            <li class="gallery__thumbnail"><img src="https://bjz.com.pl/wp-content/uploads/2021/02/monitoring-domu.jpg">
+            <li class="gallery__thumbnail"><img tabindex="0"
+                    src="https://bjz.com.pl/wp-content/uploads/2021/02/monitoring-domu.jpg">
             </li>
         </ul>
     </section>

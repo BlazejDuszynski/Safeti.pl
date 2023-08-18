@@ -29,3 +29,8 @@
 .gallery__thumbnail img:hover {
     transform: scale(1.1);
 }
+
+.gallery__thumbnail img:focus-visible,
+.gallery__thumbnail img:focus {
+    border: solid 5px var(--button-background);
+}

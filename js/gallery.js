@@ -27,15 +27,25 @@ const showPrevImage = () => {
 };
 
 const closePopup = () => {
-  popup.classList.add("hidden");
+  popup.classList.add("fadeOut");
+  setTimeout(() => {
+    popup.classList.add("hidden");
+    popup.classList.remove("fadeOut");
+  }, 300);
 };
 
 thumbnails.forEach((thumbnail, index) => {
-  thumbnail.addEventListener("click", (e) => {
+  const showPopup = (e) => {
     popup.classList.remove("hidden");
     popupImg.src = e.target.src;
     popupImg.alt = e.target.alt;
     currentImgIndex = index;
+  };
+  thumbnail.addEventListener("click", showPopup);
+  thumbnail.addEventListener("keydown", (e) => {
+    if (e.code === "Enter") {
+      showPopup(e);
+    }
   });
 });
 
