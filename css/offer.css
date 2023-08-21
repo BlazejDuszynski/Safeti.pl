@@ -74,10 +74,17 @@
     cursor: pointer;
     background: none;
     border: none;
-    padding: 10px;
     color: #EE7D7E;
     font-weight: 600;
     border-bottom: 1px solid #EE7D7E;
+    display: flex;
+    justify-content: center;
+}
+
+.offer__card>button>a {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 768px) {
