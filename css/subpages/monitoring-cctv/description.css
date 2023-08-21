@@ -22,10 +22,16 @@
 .description__button {
     background-color: rgb(109, 185, 230);
     color: white;
-    padding: 10px;
     width: 200px;
     letter-spacing: 1px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    display: flex;
+}
+
+.description__button a {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
