@@ -46,8 +46,21 @@
         align-items: center;
     }
 
-    .hero__heading {
-        font-size: 1.7em;
+    .hero__container h1 {
+        font-size: 2.3em;
     }
 
+    .hero__container h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero__socialMediaContainer {
+        display: none;
+    }
+
+    .hero__container {
+        padding: 20vh 10%;
+    }
 }

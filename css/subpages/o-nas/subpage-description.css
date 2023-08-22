@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5vh 10%;
+    gap: 10vh;
+    padding: 20vh 10%;
     background-color: #1e3f6307;
 }
 
@@ -10,8 +11,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
-    margin: 15vh 0;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .description__imageContainer {
@@ -34,7 +34,6 @@
     border: none;
     cursor: pointer;
     display: flex;
-    margin-bottom: 100px;
 }
 
 .description__button a {
@@ -43,27 +42,25 @@
     padding: 10px;
 }
 
-.howWeWork {
-    padding: 15vh 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10vh;
+@media (max-width: 1200px) {
+    .description__section {
+        font-size: 0.8em;
+    }
+
+    .description__button {
+        font-size: 0.8em;
+    }
 }
 
-.howWeWork__item {
-    /* background-color: aquamarine; */
-    height: 40vh;
-    width: 100%;
-    position: relative;
-    padding: 40px;
+@media (max-width: 768px) {
+    .description {
+        padding: 10vh 10%;
+    }
 }
 
-.howWeWork__counter {
-    position: absolute;
-    top: 0;
-    left: 10%;
-    height: 100%;
-    font-size: 160px;
-    color: rgba(128, 128, 128, 0.37);
+@media (max-width: 576px) {
+    .description__section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
