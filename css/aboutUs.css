@@ -43,11 +43,12 @@ img {
     line-height: 1.5em;
 }
 
-.aboutUs__servicesList li {
+.aboutUs__servicesList>li {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    font-style: italic;
     color: rgb(99, 99, 99);
 }
 
@@ -74,11 +75,10 @@ img {
     }
 
     .aboutUs__servicesList {
-        list-style: none;
         line-height: 2em;
     }
 
-    .aboutUs__servicesList li {
+    .aboutUs__servicesList>li {
         display: flex;
         align-items: center;
         gap: 10px;

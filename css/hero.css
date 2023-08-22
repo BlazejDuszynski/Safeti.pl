@@ -123,6 +123,7 @@
     .hero__container {
         padding: 20vh 3%;
         width: 100%;
+        line-height: 1.8em;
     }
 
     .hero__textContainer {
@@ -134,6 +135,7 @@
 
     .hero__heading {
         font-size: 1.7em;
+        line-height: 1.5em;
     }
 
     .hero__button {
