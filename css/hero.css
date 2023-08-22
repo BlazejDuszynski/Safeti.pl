@@ -24,7 +24,7 @@
 }
 
 .hero__heading {
-    font-size: 2em;
+    font-size: 2.3em;
     opacity: 0;
 }
 
@@ -57,7 +57,7 @@
     border-radius: 5px;
     background-color: rgb(109, 185, 230);
     color: whitesmoke;
-    font-size: 0.8em;
+    font-size: 0.9em;
     cursor: pointer;
     transition: all .1s ease-in-out;
     opacity: 0;
@@ -115,6 +115,10 @@
 }
 
 @media (max-width: 768px) {
+
+    .hero {
+        height: 100vh;
+    } 
 
     .hero__container {
         padding: 20vh 3%;

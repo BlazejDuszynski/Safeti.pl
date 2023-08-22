@@ -1,7 +1,7 @@
 .hero__header {
     position: fixed;
     width: 100vw;
-    z-index: 99999;
+    z-index: 9;
     opacity: 0;
     color: whitesmoke;
 }
