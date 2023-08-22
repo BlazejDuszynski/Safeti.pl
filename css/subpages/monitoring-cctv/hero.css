@@ -48,5 +48,14 @@
     .hero__heading {
         font-size: 1.7em;
     }
+}
 
+@media (max-width: 576px) {
+    .hero__socialMediaContainer {
+        display: none;
+    }
+
+    .hero__container {
+        padding: 20vh 10%;
+    }
 }
